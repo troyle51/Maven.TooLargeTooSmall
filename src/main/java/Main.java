@@ -12,12 +12,21 @@ public class Main {
         double randomNum = Math.random() * 20 + 1;
         int rand = (int) randomNum;
         int tries = 0;
+        int inputHolder = 0;
 
         while (tries < 5) {
             System.out.println("Please guess a number between 1 and 20. You have 5 tries!");
             guessNumb = guess.nextInt();
             tries++;
 
+            ///Need to add check on consecutive tries.
+//            System.out.println(tries);
+//
+//            if(tries => 1){
+//                inputHolder = guessNumb;
+//            } else {
+//                tries--;
+//            }
 
             if (guessNumb == rand) {
                 System.out.println("You got it!");
